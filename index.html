@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<style type="text/css">
+		body {	
+		font-family: verdana;
+		padding-left: 	15%;
+		padding-right: 30%;
+		}
+		form  {
+			background-color: rgb(204, 162, 238);
+			padding: 5%;
+			}
+		label {
+			font-size: medium;
+			color: rgb(65, 65, 65); 
+			line-height: 1.8;
+			}
+		textarea {
+			margin-top: 10px;
+					}
+		.falemais {
+			display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    		}
+    	.submit {
+    		text-align: center;
+    		}
+		
+	</style>
+		
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Oque você gosta de ouvir? </title>
+
+</head>
+<body>
+	
+	<h1 id="title">Oque você gosta de ouvir?</h1>
+	
+	<script src="https://cdn.freecodecamp.org/
+	testable-projects-fcc/v1/bundle.js"></script>
+	
+	<p id="description">Queremos saber o tipo de musica que você gosta de ouvir sem determinadas situações</p>
+
+	<form id="survey-form">
+		<label id="name-label">Seu nome: </label> 
+			<input type="text" name="name" required id="name" placeholder="Digite seu nome"> <br>
+		
+		<label id="email-label">E-mail: </label>
+			<input type="email" name="email" required id="email" placeholder="Digite seu e-mail"> <br>
+		
+		<label id="number-label">Número: </label>
+			<input type="number" name="number" required  id="number" min="1" max="10" placeholder="Digite seu número"> <br>
+
+
+		<label for="dopdown">Quando precisa acordar:</label> 
+			<select name="acordar" id="dropdown">
+			  <option value="rock">Rock</option>
+			  <option value="samba">Samba</option>
+			  <option value="black">Black</option>
+			  <option value="funk">Funk</option>
+			</select>
+
+		<br><label for="acalmar">Quando precisa se acalmar</label><br>
+			
+			<input type="radio" name="acalmar" value="jazz">Jazz <br>
+			<input type="radio" name="acalmar" value="Blues">Blues <br>
+			<input type="radio" name="acalmar" value="Classica">Classica	 
+			<br>		
+ 
+ 		<br><label for="Festa">Quando esta dando uma festa</label><br>
+			<input type="checkbox" id="vehicle-1" name="vehicle-1" value="Bike">
+			<label for="vehicle-1"> Pagode</label>
+			<input type="checkbox" id="vehicle-2" name="vehicle-2" value="Car">
+			<label for="vehicle-2"> Sertanejo </label>
+			<input type="checkbox" id="vehicle-3" name="vehicle-3" value="Boat">
+			<label for="vehicle-3"> Eletrônico</label>
+	
+			<br><textarea class="falemais" placeholder="Comente mais oque você escuta"> </textarea>
+		<div class="submit">
+			<input type="submit" id="submit">
+		</div>	
+	</form>
+</body>
+</html>
